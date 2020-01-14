@@ -1,4 +1,6 @@
-zimport java.util.stream.IntStream;
+package com.csnowss;
+
+import java.util.stream.IntStream;
 
 public class BacktrackingAlgorithm {
 
@@ -30,9 +32,9 @@ public class BacktrackingAlgorithm {
 
     private void printBoard() {
         for (int row = BOARD_START_INDEX; row < BOARD_SIZE; row++) {
-            // if (row > 0 && (row % BOARD_SIZE == 0))  {
-            //     System.out.println();
-            // }
+            if (row > 1 && (row % BOARD_SIZE == 1))  {
+                System.out.println();
+            }
             for (int column = BOARD_START_INDEX; column < BOARD_SIZE; column++) {
                 System.out.print(board[row][column] + " ");
             }
